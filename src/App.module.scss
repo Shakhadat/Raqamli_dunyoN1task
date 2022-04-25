@@ -1,0 +1,29 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    gap: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-sizing: border-box;
+}
+// media query bilan ishlash;
+@media screen and (max-width: 1024px){
+    .container{
+        grid-template-columns: 1fr;
+        padding: 20px;
+        box-sizing: border-box;
+                // margin: 10px auto;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .container{
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+}
+
+
+
+

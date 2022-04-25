@@ -1,0 +1,101 @@
+.Product_container{
+    margin: 0 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 18px;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap:24px;
+    .fullInfo{
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        gap: 1rem;
+        padding: 0;
+        .imgConent{
+            width: 100%;
+            height: 100%;
+            background: #FE7564;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+        .mainInfo{
+                &>div:first-child{
+                    font-family: 'Gotham Pro';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 19px;
+                    color: #42445A;
+                    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+                }
+                &>div:last-child{
+                    font-family: 'Gotham Pro';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 14px;
+                    color: rgba(66, 68, 90, 0.5);
+                }
+        }
+        .NameforKg{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 19px 0;
+            &>div:first-child{
+                font-family: 'Gotham Pro';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 19px;
+                color: #42445A;
+            }
+            &>div:last-child{
+                font-family: 'Gotham Pro';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 14px;
+                color: #42445A;
+            }
+        }
+    }
+    .AddInfo{
+        display: flex;
+        gap: 55px;
+        .titleCount{
+            font-family: 'Gotham Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 14px;
+            color: #70ADEE;
+            text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+            &+div{
+                font-family: 'Gotham Pro';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 19px;
+                color: #42445A;
+                padding: 28px 0;
+            }
+        }
+    }
+}
+
+// media
+@media screen and (max-width: 1024px){
+    .AddInfo{
+      gap:5px;
+      }
+}
+
+@media screen and (max-width: 600px){
+
+}
+

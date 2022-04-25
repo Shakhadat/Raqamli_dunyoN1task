@@ -1,0 +1,79 @@
+// mixin for round mixens
+@mixin addProgress {
+    width: 43px;
+    height: 43px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+// mixen for initial round progress
+@mixin roundProgressInitial {
+    @include addProgress();
+     border: 2px solid rgba(196, 196, 196, 0.3);
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
+    color: #C4C4C4;
+   
+}
+@mixin roundProgressFinish {
+    @include addProgress();
+    background: rgba(11, 217, 169, 1);
+   
+    
+}
+@mixin roundProgressCurrent {
+    @include addProgress();
+    border: 2px solid #0BD9A9;
+    box-sizing: border-box;
+}
+@mixin StepAfter {
+    display: inline-block;
+    position: absolute;
+    bottom:-40px;
+    left: 12px;
+    // background: #000;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color:rgba(66, 68, 90, 0.8);
+    line-height: 150%;
+}
+.ProgressBarContainer{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+.firstStep{
+   @include roundProgressInitial();
+    
+}
+.firstStep::after{
+    content: 'Собирается';
+   @include StepAfter();
+}
+.secondStep{
+    @include roundProgressInitial();
+}
+.secondStep::after{
+    content: 'Доставляется';
+   @include StepAfter();
+}
+.thirdStep{
+    @include roundProgressInitial();
+}
+.thirdStep::after{
+    content: 'Завершен';
+   @include StepAfter();
+}
+.line1{
+    position: relative;
+    display: inline-block;
+    left: 0;
+    width: 223px;
+    height: 6px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}

@@ -1,0 +1,41 @@
+.content{
+    background-color: rgba(239, 244, 250, 1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    position: relative;
+    top: 100px;
+    padding: 7px 20px;
+    color:rgba(66, 68, 90, 0.8);
+    display: flex;
+    align-items: center;
+    gap: 69px;
+    // margin: 0 20px 0 0;
+    div:last-child{
+        img{
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1024px){
+    .content{
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap:10px;
+        // margin: 10px auto;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .container{
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+}

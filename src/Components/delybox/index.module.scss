@@ -1,0 +1,71 @@
+.Dely_container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    top: 200px;
+    &>div:first-child{
+        height: 140px;
+        // margin: 0 20px 0 0;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+        // text style
+        font-family: 'Gotham Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 19px;
+        color: rgba(66, 68, 90, 0.5);
+        padding: 30px;
+    }
+    &>div:last-child{
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+        padding: 10px 30px;
+        // margin: 0 20px 0 0;
+        &>div:first-child{
+            text-align: center;
+            font-family: 'Gotham Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 130%;
+            color: #42445A;
+        }
+        &>div:last-child{
+            font-family: 'Gotham Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 14px;
+            color: rgba(66, 68, 90, 0.8);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            &>div{
+                margin: 10px 0;
+                label{
+                    margin-left: 15px;
+                }
+            }
+        }
+
+    }
+}
+// media query bilan ishlash;
+@media screen and (max-width: 1024px){
+    .Dely_container{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .Dely_container{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 5px auto;
+    }
+}

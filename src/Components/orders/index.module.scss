@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('../../fonts/Gotham\ Pro\ Regular.ttf');
+}
+.head{
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 38px;
+    color: #42445A;
+    text-align: left;
+    margin: 32px 20px 105px 20px;
+    // width: 559px;
+}
+.card{
+    background-color: rgba(239, 244, 250, 1);
+    // width: 559px;
+    // height: 140px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    display: flex;
+    padding: 10px 20px;
+    // box-sizing: border-box;
+    justify-content: space-between;
+    margin: 20px 0 0 20px;
+    div{
+        padding: 0.3rem;
+    }
+    .order_property{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 19px;
+        color: #0BD9A9;
+    }
+    .restProperty{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 19px;
+        color: rgba(66, 68, 90, 0.8);
+    }
+    .values>div:last-child{
+        text-decoration: underline;
+        font-weight: 600;
+    }
+    .restvalue{
+        // font-family: 'Gotham Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 19px;
+        color: rgba(66, 68, 90, 0.5);
+    }
+
+    .thirdCol{
+        display: flex;
+        // align-items: center;
+        align-items: flex-end;
+        flex-direction: column;
+        justify-content: flex-end;
+        // background-color: #0BD9A9;
+       
+        div:last-child{
+            font-family: 'Gotham Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 15px;
+            color: rgba(66, 68, 90, 0.5);
+            margin-top: 1.7rem;
+        }
+    }
+
+}
+
+// media query bilan ishlash;
+@media screen and (max-width: 1024px){
+    .card{
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .card{
+        margin: 20px;
+    }
+
+}
